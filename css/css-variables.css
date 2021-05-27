@@ -1,0 +1,220 @@
+:root {
+  /* 1 - Colors */
+  /* ViettelPay Red */
+  --tokenViettelPayRed100: #ee0033;
+  --tokenViettelPayRed80: #f1335c;
+  --tokenViettelPayRed60: #f56685;
+  --tokenViettelPayRed40: #f899ad;
+  --tokenViettelPayRed20: #fcccd6;
+  --tokenViettelPayRed10: #fde5eb;
+  --tokenViettelPayRed05: #fef2f5;
+  --tokenViettelPayRed02: #fffafb;
+  /* Scarlet Red */
+  --tokenScarletRed100: #ff4850;
+  --tokenScarletRed80: #ff6d73;
+  --tokenScarletRed60: #ff9196;
+  --tokenScarletRed40: #ffb6b9;
+  --tokenScarletRed20: #ffdadc;
+  --tokenScarletRed10: #ffeded;
+  --tokenScarletRed05: #fff6f6;
+  --tokenScarletRed02: #fffbfb;
+  /* Space Blue */
+  --tokenSpaceBlue100: #0a2956;
+  --tokenSpaceBlue80: #2d4982;
+  --tokenSpaceBlue60: #576d9b;
+  --tokenSpaceBlue40: #8192b4;
+  --tokenSpaceBlue20: #abb6cd;
+  --tokenSpaceBlue10: #d5dbe6;
+  --tokenSpaceBlue05: #f3f4f7;
+  --tokenSpaceBlue02: #fafbfc;
+  /* Pine Blue */
+  --tokenPineBlue100: #2ca196;
+  --tokenPineBlue80: #56b4ab;
+  --tokenPineBlue60: #80c7c0;
+  --tokenPineBlue40: #abd9d5;
+  --tokenPineBlue20: #d5ecea;
+  --tokenPineBlue10: #eaf6f4;
+  --tokenPineBlue05: #f4fafa;
+  --tokenPineBlue02: #fbfdfd;
+  /* Gold */
+  --tokenGold100: #ffbe41;
+  --tokenGold80: #ffcb67;
+  --tokenGold60: #ffd88d;
+  --tokenGold40: #ffe5b3;
+  --tokenGold20: #fff2d9;
+  --tokenGold10: #fff8ec;
+  --tokenGold05: #fffcf5;
+  --tokenGold02: #fffefb;
+  /* Crimson Red */
+  --tokenCrimsonRed100: #db4e3b;
+  --tokenCrimsonRed80: #e27162;
+  --tokenCrimsonRed60: #e99589;
+  --tokenCrimsonRed40: #f1b8b1;
+  --tokenCrimsonRed20: #f8dcd8;
+  --tokenCrimsonRed10: #fbedeb;
+  --tokenCrimsonRed05: #fdf6f5;
+  --tokenCrimsonRed02: #fefbfb;
+  /* Dark */
+  --tokenDark100: #222222;
+  --tokenDark80: #4e4e4e;
+  --tokenDark60: #7a7a7a;
+  --tokenDark40: #a7a7a7;
+  --tokenDark20: #d3d3d3;
+  --tokenDark10: #e9e9e9;
+  --tokenDark05: #f4f4f4;
+  --tokenDark02: #fbfbfb;
+  --tokenBlack: #000000;
+  --tokenWhite: #ffffff;
+  /* Shadows */
+  --tokenShadowsCardColor: rgba(0, 0, 0, var(--tokenOpacity08));
+  --tokenShadowsButtonColor: rgba(238, 0, 51, var(--tokenOpacity25));
+  /* Gradient */
+  --tokenGrayCloud: linear-gradient(
+    90deg,
+    var(--tokenDark10) 0%,
+    var(--tokenDark05) 100%
+  );
+
+  /* 2 - Typography */
+  /* Font Family */
+  --tokenFontFamilyWeb: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* Font Weight */
+  --tokenFontWeightRegular: 400;
+  --tokenFontWeightMedium: 500;
+  --tokenFontWeightBold: 700;
+  /* Font Size */
+  --tokenFontSize48: 3rem; /* 48px */
+  --tokenFontSize40: 2.5rem; /* 40px */
+  --tokenFontSize32: 2rem; /* 32px */
+  --tokenFontSize24: 1.5rem; /* 24px */
+  --tokenFontSize22: 1.375rem; /* 22px */
+  --tokenFontSize18: 1.125rem; /* 18px */
+  --tokenFontSize16: 1rem; /* 16px */
+  --tokenFontSize14: 0.875rem; /* 14px */
+  --tokenFontSize13: 0.813rem; /* 13px */
+  --tokenFontSize12: 0.75rem; /* 12px */
+  --tokenFontSize10: 0.625rem; /* 10px */
+  --tokenFontSize09: 0.563rem; /* 9px */
+  --tokenFontSize08: 0.5rem; /* 8px */
+  /* Line Height */
+  --tokenLineHeight58: 3.625rem; /* 58px */
+  --tokenLineHeight48: 3rem; /* 48px */
+  --tokenLineHeight38: 2.375rem; /* 38px */
+  --tokenLineHeight28: 1.75rem; /* 28px */
+  --tokenLineHeight26: 1.625rem; /* 26px */
+  --tokenLineHeight22: 1.375rem; /* 22px */
+  --tokenLineHeight20: 1.25rem; /* 20px */
+  --tokenLineHeight18: 1.125rem; /* 18px */
+  --tokenLineHeight16: 1rem; /* 16px */
+  --tokenLineHeight14: 0.875rem; /* 14px */
+  --tokenLineHeight12: 0.75rem; /* 12px */
+  --tokenLineHeight10: 0.625rem; /* 10px */
+  --tokenLineHeight09: 0.563rem; /* 9px */
+
+  /* 3 - Spacing */
+  --tokenSpacing00: 0rem;
+  --tokenSpacing02: 0.125rem;
+  --tokenSpacing04: 0.25rem;
+  --tokenSpacing08: 0.5rem;
+  --tokenSpacing12: 0.75rem;
+  --tokenSpacing16: 1rem;
+  --tokenSpacing24: 1.5rem;
+  --tokenSpacing32: 2rem;
+  --tokenSpacing40: 2.5rem;
+  --tokenSpacing48: 3rem;
+  --tokenSpacing56: 3.5rem;
+  --tokenSpacing64: 4rem;
+
+  /* 4 - Grids */
+
+  /* 5 - Shadows */
+  --tokenShadowsCard: 0 0.25rem 0.75rem rgba(0, 0, 0, var(--tokenOpacity08));
+  --tokenShadowsBottomTab: 0 -0.25rem 0.75rem rgba(0, 0, 0, var(--tokenOpacity08));
+  --tokenShadowsButtonLarge: 0 0.375rem 0.875rem
+    rgba(238, 0, 51, var(--tokenOpacity25));
+  --tokenShadowsButtonMedium: 0 0.25rem 0.75rem
+    rgba(238, 0, 51, var(--tokenOpacity25));
+  --tokenShadowsButtonSmall: 0 0.125rem 0.625rem
+    rgba(238, 0, 51, var(--tokenOpacity25));
+
+  /* 6 - Opacity */
+  --tokenOpacity08: 0.08;
+  --tokenOpacity25: 0.25;
+  --tokenOpacity50: 0.5;
+  --tokenOpacity60: 0.6;
+  --tokenOpacity80: 0.8;
+  --tokenOpacity90: 0.9;
+  --tokenOpacity100: 1;
+
+  /* 7 - Border Radius */
+  --tokenBorderRadius02: 0.125rem;
+  --tokenBorderRadius04: 0.25rem;
+  --tokenBorderRadius06: 0.375rem;
+  --tokenBorderRadius08: 0.5rem;
+  --tokenBorderRadius10: 0.625rem;
+  --tokenBorderRadius12: 0.75rem;
+  --tokenBorderRadius14: 0.875rem;
+  --tokenBorderRadius16: 1rem;
+  --tokenBorderRadius18: 1.125rem;
+  --tokenBorderRadius20: 1.25rem;
+  --tokenBorderRadius22: 1.375rem;
+  --tokenBorderRadius24: 1.5rem;
+
+  /* 8 - Borders */
+  --tokenBorderViettelPayRed100: var(--tokenViettelPayRed80);
+  --tokenBorderDark10: var(--tokenDark10);
+  --tokenBorderDark20: var(--tokenDark20);
+  --tokenBorderDark40: var(--tokenDark40);
+  --tokenBorderWhite: var(--tokenWhite);
+
+  /* 9 - Links */
+
+  /* 10 - Timing */
+  --tokenTimingDelay200: 200ms;
+  --tokenTimingDelay300: 300ms;
+  --tokenTimingFunctionEaseInOut: ease-in-out;
+  --tokenTimingDuration1000: 1000ms;
+  --tokenTimingDuration2000: 2000ms;
+  --tokenTimingDuration3000: 3000ms;
+  --tokenTimingNameSlideInUp: slideInUp;
+  --tokenTimingNameSlideInDown: slideInDown;
+  --tokenTimingNameSlideOutDown: slideOutDown;
+  --tokenTimingNameZoomIn: zoomIn;
+  --tokenTimingNameFadeOut: fadeOut;
+  --tokenTimingNameFloatUpAndDown: floatUpAndDown;
+  --tokenTimingIterationCount01: 1;
+  --tokenTimingIterationCount02: 2;
+  --tokenTimingIterationCount03: 3;
+  --tokenTimingIterationCountInfinite: infinite;
+
+  /* 11 - Sizing */
+  --tokenSizing01: 0.063rem; /* 1px; */
+  --tokenSizing02: 0.125rem; /* 2px; */
+  --tokenSizing04: 0.25rem; /* 4px; */
+  --tokenSizing08: 0.5rem; /* 8px; */
+  --tokenSizing16: 1rem; /* 16px; */
+  --tokenSizing24: 1.5rem; /* 24px; */
+  --tokenSizing32: 2rem; /* 32px; */
+  --tokenSizing40: 2.5rem; /* 40px; */
+  --tokenSizing48: 3rem; /* 48px; */
+  --tokenSizing56: 3.5rem; /* 56px; */
+  --tokenSizing64: 4rem; /* 64px; */
+  --tokenSizing72: 4.5rem; /* 72px; */
+  --tokenSizing80: 5rem; /* 80px; */
+  --tokenSizing88: 5.5rem; /* 88px; */
+  --tokenSizing96: 6rem; /* 96px; */
+  --tokenSizing104: 6.5rem; /* 104px; */
+  --tokenSizing112: 7rem; /* 112px; */
+  --tokenSizing120: 7.5rem; /* 120px; */
+  --tokenSizing128: 8rem; /* 128px; */
+  --tokenSizing136: 8.5rem; /* 136px; */
+  --tokenSizing144: 9rem; /* 144px; */
+  --tokenSizing152: 9.5rem; /* 152px; */
+  --tokenSizing160: 10rem; /* 160px; */
+  --tokenSizing168: 10.5rem; /* 168px; */
+  --tokenSizing176: 11rem; /* 176px; */
+  --tokenSizing184: 11.5rem; /* 184px; */
+  --tokenSizing192: 12rem; /* 192px; */
+  --tokenSizing200: 12.5rem; /* 200px; */
+}
