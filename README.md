@@ -4,12 +4,12 @@
 
 ## Tutorials
 
-- [HTML Tutorial](https://www.w3schools.com/html/)
-- [HTML Tutorial](https://www.tutorialspoint.com/html/index.htm)
-- [HTML Tutorial](https://www.javatpoint.com/html-tutorial)
-- [CSS Tutorial](https://www.w3schools.com/css/default.asp)
-- [CSS Tutorial](https://www.tutorialspoint.com/css/index.htm)
-- [CSS Tutorial](https://www.javatpoint.com/css-tutorial)
+- [HTML Tutorial - W3Schools](https://www.w3schools.com/html/)
+- [HTML Tutorial - Tutorials Point](https://www.tutorialspoint.com/html/index.htm)
+- [HTML Tutorial - JavaTpoint](https://www.javatpoint.com/html-tutorial)
+- [CSS Tutorial - W3Schools](https://www.w3schools.com/css/default.asp)
+- [CSS Tutorial - Tutorials Point](https://www.tutorialspoint.com/css/index.htm)
+- [CSS Tutorial - JavaTpoint](https://www.javatpoint.com/css-tutorial)
 
 ## Courses
 
