@@ -1,10 +1,8 @@
 # CSS Grid
 
-[CSS Grid Tutorial](https://www.quackit.com/css/grid/tutorial/)
-
-[CSS Grid Examples](https://www.quackit.com/css/grid/examples/)
-
-[Grid Layout Generator](https://grid.layoutit.com/)
+- [CSS Grid Tutorial](https://www.quackit.com/css/grid/tutorial/)
+- [CSS Grid Examples](https://www.quackit.com/css/grid/examples/)
+- [Grid Layout Generator](https://grid.layoutit.com/)
 
 1. display
 
