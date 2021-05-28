@@ -115,3 +115,13 @@
 ## Meta Tags
 
 [Meta Tags Preview](https://metatags.io/)
+
+## Boilerplate
+
+[HTML5 Boilerplate](https://html5boilerplate.com/)
+
+## Humans.txt
+
+[humans.txt](https://humanstxt.org/)
+
+> It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
