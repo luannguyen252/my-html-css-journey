@@ -111,3 +111,7 @@
 .form__submit--disabled {
 }
 ```
+
+## Meta Tags
+
+[Meta Tags Preview](https://metatags.io/)
