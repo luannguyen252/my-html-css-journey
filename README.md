@@ -2,6 +2,24 @@
 
 > The source about design and code with HTML/CSS.
 
+## Tutorials
+
+- [HTML Tutorial](https://www.w3schools.com/html/)
+- [HTML Tutorial](https://www.tutorialspoint.com/html/index.htm)
+- [HTML Tutorial](https://www.javatpoint.com/html-tutorial)
+- [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+- [CSS Tutorial](https://www.tutorialspoint.com/css/index.htm)
+- [CSS Tutorial](https://www.javatpoint.com/css-tutorial)
+
+## Courses
+
+- [HTML & CSS Crash Course - Scrimba](https://scrimba.com/learn/htmlcss)
+- [Learn CSS Variables for free - Scrimba](https://scrimba.com/learn/cssvariables)
+- [Introduction to CSS - Scrimba](https://scrimba.com/learn/introtocss)
+- [Introduction to HTML - Scrimba](https://scrimba.com/learn/html)
+- [Learn Flexbox for free - Scrimba](https://scrimba.com/learn/flexbox)
+- [Learn CSS Grid for free - Scrimba](https://scrimba.com/learn/cssgrid)
+
 ## BEM
 
 [BEM](http://getbem.com/)
