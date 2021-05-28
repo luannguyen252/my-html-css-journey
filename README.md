@@ -13,12 +13,32 @@
 
 ## Courses
 
+- [The Responsive Web Design Bootcamp - Scrimba](https://scrimba.com/learn/responsive)
 - [HTML & CSS Crash Course - Scrimba](https://scrimba.com/learn/htmlcss)
 - [Learn CSS Variables for free - Scrimba](https://scrimba.com/learn/cssvariables)
 - [Introduction to CSS - Scrimba](https://scrimba.com/learn/introtocss)
 - [Introduction to HTML - Scrimba](https://scrimba.com/learn/html)
 - [Learn Flexbox for free - Scrimba](https://scrimba.com/learn/flexbox)
 - [Learn CSS Grid for free - Scrimba](https://scrimba.com/learn/cssgrid)
+
+## References
+
+- [HTML Reference](https://htmlreference.io/)
+- [HTML reference - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+- [HTML Element Reference - W3Schools](https://www.w3schools.com/tags/default.asp)
+- [CSS Reference](https://cssreference.io/)
+- [CSS reference - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+## Schema
+
+- [Schema.org](https://schema.org/)
+
+## HTML Accessibility
+
+- [A11Y Style Guide](https://a11y-style-guide.com/style-guide/)
+- [HTML5 Accessibility - A11Y](https://html5accessibility.com/)
+- [HTML Accessibility - W3Schools](https://www.w3schools.com/html/html_accessibility.asp)
+- [HTML: A good basis for accessibility - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
 
 ## BEM
 
