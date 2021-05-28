@@ -1,8 +1,9 @@
 # CSS Flexbox
 
-- [CSS Flexbox Tutorial](https://www.quackit.com/css/flexbox/tutorial/)
-- [CSS Flexbox Examples](https://www.quackit.com/css/flexbox/examples/)
-- [Flexbox Cheat Sheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Flexbox Tutorial - Quackit](https://www.quackit.com/css/flexbox/tutorial/)
+- [CSS Flexbox Examples - Quackit](https://www.quackit.com/css/flexbox/examples/)
+- [Flexbox Cheat Sheet - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [What The Flexbox - Wes Bos](https://github.com/wesbos/What-The-Flexbox)
 
 1. display
 

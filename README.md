@@ -125,3 +125,26 @@
 [humans.txt](https://humanstxt.org/)
 
 > It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
+
+## prefers-color-scheme
+
+```css
+body {
+  --bg-color: white;
+  --text-color: black;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+```
+
+## Media Queries
+
+[Media Queries for Standard Devices ](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)

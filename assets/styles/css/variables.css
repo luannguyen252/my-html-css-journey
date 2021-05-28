@@ -1,220 +1,593 @@
 :root {
-  /* 1 - Colors */
-  /* ViettelPay Red */
-  --tokenViettelPayRed100: #ee0033;
-  --tokenViettelPayRed80: #f1335c;
-  --tokenViettelPayRed60: #f56685;
-  --tokenViettelPayRed40: #f899ad;
-  --tokenViettelPayRed20: #fcccd6;
-  --tokenViettelPayRed10: #fde5eb;
-  --tokenViettelPayRed05: #fef2f5;
-  --tokenViettelPayRed02: #fffafb;
-  /* Scarlet Red */
-  --tokenScarletRed100: #ff4850;
-  --tokenScarletRed80: #ff6d73;
-  --tokenScarletRed60: #ff9196;
-  --tokenScarletRed40: #ffb6b9;
-  --tokenScarletRed20: #ffdadc;
-  --tokenScarletRed10: #ffeded;
-  --tokenScarletRed05: #fff6f6;
-  --tokenScarletRed02: #fffbfb;
-  /* Space Blue */
-  --tokenSpaceBlue100: #0a2956;
-  --tokenSpaceBlue80: #2d4982;
-  --tokenSpaceBlue60: #576d9b;
-  --tokenSpaceBlue40: #8192b4;
-  --tokenSpaceBlue20: #abb6cd;
-  --tokenSpaceBlue10: #d5dbe6;
-  --tokenSpaceBlue05: #f3f4f7;
-  --tokenSpaceBlue02: #fafbfc;
-  /* Pine Blue */
-  --tokenPineBlue100: #2ca196;
-  --tokenPineBlue80: #56b4ab;
-  --tokenPineBlue60: #80c7c0;
-  --tokenPineBlue40: #abd9d5;
-  --tokenPineBlue20: #d5ecea;
-  --tokenPineBlue10: #eaf6f4;
-  --tokenPineBlue05: #f4fafa;
-  --tokenPineBlue02: #fbfdfd;
-  /* Gold */
-  --tokenGold100: #ffbe41;
-  --tokenGold80: #ffcb67;
-  --tokenGold60: #ffd88d;
-  --tokenGold40: #ffe5b3;
-  --tokenGold20: #fff2d9;
-  --tokenGold10: #fff8ec;
-  --tokenGold05: #fffcf5;
-  --tokenGold02: #fffefb;
-  /* Crimson Red */
-  --tokenCrimsonRed100: #db4e3b;
-  --tokenCrimsonRed80: #e27162;
-  --tokenCrimsonRed60: #e99589;
-  --tokenCrimsonRed40: #f1b8b1;
-  --tokenCrimsonRed20: #f8dcd8;
-  --tokenCrimsonRed10: #fbedeb;
-  --tokenCrimsonRed05: #fdf6f5;
-  --tokenCrimsonRed02: #fefbfb;
-  /* Dark */
-  --tokenDark100: #222222;
-  --tokenDark80: #4e4e4e;
-  --tokenDark60: #7a7a7a;
-  --tokenDark40: #a7a7a7;
-  --tokenDark20: #d3d3d3;
-  --tokenDark10: #e9e9e9;
-  --tokenDark05: #f4f4f4;
-  --tokenDark02: #fbfbfb;
-  --tokenBlack: #000000;
-  --tokenWhite: #ffffff;
-  /* Shadows */
-  --tokenShadowsCardColor: rgba(0, 0, 0, var(--tokenOpacity08));
-  --tokenShadowsButtonColor: rgba(238, 0, 51, var(--tokenOpacity25));
-  /* Gradient */
-  --tokenGrayCloud: linear-gradient(
-    90deg,
-    var(--tokenDark10) 0%,
-    var(--tokenDark05) 100%
-  );
+  /* =========================== */
+  /* ===== 1. Color Tokens ===== */
+  /* =========================== */
+  /* Neutral */
+  --token-color-white: #ffffff;
+  --token-color-black: #000000;
 
-  /* 2 - Typography */
-  /* Font Family */
-  --tokenFontFamilyWeb: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* Font Weight */
-  --tokenFontWeightRegular: 400;
-  --tokenFontWeightMedium: 500;
-  --tokenFontWeightBold: 700;
+  /* Blue Gray */
+  --token-color-blue-gray-50: #f8fafc;
+  --token-color-blue-gray-100: #f1f5f9;
+  --token-color-blue-gray-200: #e2e8f0;
+  --token-color-blue-gray-300: #cbd5e1;
+  --token-color-blue-gray-400: #94a3b8;
+  --token-color-blue-gray-500: #64748b;
+  --token-color-blue-gray-600: #475569;
+  --token-color-blue-gray-700: #334155;
+  --token-color-blue-gray-800: #1e293b;
+  --token-color-blue-gray-900: #0f1729;
+
+  /* Cool Gray */
+  --token-color-cool-gray-50: #f9fafb;
+  --token-color-cool-gray-100: #f3f4f6;
+  --token-color-cool-gray-200: #e5e7eb;
+  --token-color-cool-gray-300: #d1d5db;
+  --token-color-cool-gray-400: #9ca3af;
+  --token-color-cool-gray-500: #6b7280;
+  --token-color-cool-gray-600: #4b5563;
+  --token-color-cool-gray-700: #374151;
+  --token-color-cool-gray-800: #1f2937;
+  --token-color-cool-gray-900: #111827;
+
+  /* Gray */
+  --token-color-gray-50: #fafafa;
+  --token-color-gray-100: #f4f4f5;
+  --token-color-gray-200: #e4e4e7;
+  --token-color-gray-300: #d4d4d8;
+  --token-color-gray-400: #a1a1aa;
+  --token-color-gray-500: #71717a;
+  --token-color-gray-600: #52525b;
+  --token-color-gray-700: #3f3f46;
+  --token-color-gray-800: #27272a;
+  --token-color-gray-900: #18181b;
+
+  /* True Gray */
+  --token-color-true-gray-50: #fafafa;
+  --token-color-true-gray-100: #f5f5f5;
+  --token-color-true-gray-200: #e5e5e5;
+  --token-color-true-gray-300: #d4d4d4;
+  --token-color-true-gray-400: #a3a3a3;
+  --token-color-true-gray-500: #737373;
+  --token-color-true-gray-600: #525252;
+  --token-color-true-gray-700: #404040;
+  --token-color-true-gray-800: #262626;
+  --token-color-true-gray-900: #171717;
+
+  /* Warm Gray */
+  --token-color-warm-gray-50: #fafaf9;
+  --token-color-warm-gray-100: #f5f5f4;
+  --token-color-warm-gray-200: #e7e5e4;
+  --token-color-warm-gray-300: #d6d3d1;
+  --token-color-warm-gray-400: #a8a29e;
+  --token-color-warm-gray-500: #78716c;
+  --token-color-warm-gray-600: #57534e;
+  --token-color-warm-gray-700: #44403c;
+  --token-color-warm-gray-800: #292524;
+  --token-color-warm-gray-900: #1c1917;
+
+  /* Red */
+  --token-color-red-50: #fef2f2;
+  --token-color-red-100: #fee2e2;
+  --token-color-red-200: #fecaca;
+  --token-color-red-300: #fca5a5;
+  --token-color-red-400: #f87171;
+  --token-color-red-500: #ef4444;
+  --token-color-red-600: #dc2626;
+  --token-color-red-700: #b91c1c;
+  --token-color-red-800: #991b1b;
+  --token-color-red-900: #7f1d1d;
+
+  /* Orange */
+  --token-color-orange-50: #fff7ed;
+  --token-color-orange-100: #ffedd5;
+  --token-color-orange-200: #fed7aa;
+  --token-color-orange-300: #fdba74;
+  --token-color-orange-400: #fb923c;
+  --token-color-orange-500: #f97316;
+  --token-color-orange-600: #ea580c;
+  --token-color-orange-700: #c2410c;
+  --token-color-orange-800: #9a3412;
+  --token-color-orange-900: #7c2d12;
+
+  /* Amber */
+  --token-color-amber-50: #fffbeb;
+  --token-color-amber-100: #fef3c7;
+  --token-color-amber-200: #fde68a;
+  --token-color-amber-300: #fcd34d;
+  --token-color-amber-400: #fbbf24;
+  --token-color-amber-500: #f59e0b;
+  --token-color-amber-600: #d97706;
+  --token-color-amber-700: #b45309;
+  --token-color-amber-800: #92400e;
+  --token-color-amber-900: #78350f;
+
+  /* Yellow */
+  --token-color-yellow-50: #fefce8;
+  --token-color-yellow-100: #fef9c3;
+  --token-color-yellow-200: #fef08a;
+  --token-color-yellow-300: #fde047;
+  --token-color-yellow-400: #facc15;
+  --token-color-yellow-500: #eab308;
+  --token-color-yellow-600: #ca8a04;
+  --token-color-yellow-700: #a16207;
+  --token-color-yellow-800: #854d0e;
+  --token-color-yellow-900: #713f12;
+
+  /* Lime */
+  --token-color-lime-50: #f7fee7;
+  --token-color-lime-100: #ecfccb;
+  --token-color-lime-200: #d9f99d;
+  --token-color-lime-300: #bef264;
+  --token-color-lime-400: #a3e635;
+  --token-color-lime-500: #84cc16;
+  --token-color-lime-600: #65a30d;
+  --token-color-lime-700: #4d7c0f;
+  --token-color-lime-800: #3f6212;
+  --token-color-lime-900: #365314;
+
+  /* Green */
+  --token-color-green-50: #f0fdf4;
+  --token-color-green-100: #dcfce7;
+  --token-color-green-200: #bbf7d0;
+  --token-color-green-300: #86efac;
+  --token-color-green-400: #4ade80;
+  --token-color-green-500: #22c55e;
+  --token-color-green-600: #16a34a;
+  --token-color-green-700: #15803d;
+  --token-color-green-800: #166534;
+  --token-color-green-900: #14532d;
+
+  /* Emerald */
+  --token-color-emerald-50: #ecfdf5;
+  --token-color-emerald-100: #d1fae5;
+  --token-color-emerald-200: #a7f3d0;
+  --token-color-emerald-300: #6ee7b7;
+  --token-color-emerald-400: #34d399;
+  --token-color-emerald-500: #10b981;
+  --token-color-emerald-600: #059669;
+  --token-color-emerald-700: #047857;
+  --token-color-emerald-800: #065f46;
+  --token-color-emerald-900: #064e3b;
+
+  /* Teal */
+  --token-color-teal-50: #f0fdfa;
+  --token-color-teal-100: #ccfbf1;
+  --token-color-teal-200: #99f6e4;
+  --token-color-teal-300: #5eead4;
+  --token-color-teal-400: #2dd4bf;
+  --token-color-teal-500: #14b8a6;
+  --token-color-teal-600: #0d9488;
+  --token-color-teal-700: #0f766e;
+  --token-color-teal-800: #115e59;
+  --token-color-teal-900: #134e4a;
+
+  /* Cyan */
+  --token-color-cyan-50: #ecfeff;
+  --token-color-cyan-100: #cffafe;
+  --token-color-cyan-200: #a5f3fc;
+  --token-color-cyan-300: #67e8f9;
+  --token-color-cyan-400: #22d3ee;
+  --token-color-cyan-500: #06b6d4;
+  --token-color-cyan-600: #0891b2;
+  --token-color-cyan-700: #0e7490;
+  --token-color-cyan-800: #155e75;
+  --token-color-cyan-900: #164e63;
+
+  /* Light Blue */
+  --token-color-light-blue-50: #f0f9ff;
+  --token-color-light-blue-100: #e0f2fe;
+  --token-color-light-blue-200: #bae6fd;
+  --token-color-light-blue-300: #7dd3fc;
+  --token-color-light-blue-400: #38bdf8;
+  --token-color-light-blue-500: #0ea5e9;
+  --token-color-light-blue-600: #0284c7;
+  --token-color-light-blue-700: #0369a1;
+  --token-color-light-blue-800: #075985;
+  --token-color-light-blue-900: #0c4a6e;
+
+  /* Blue */
+  --token-color-blue-50: #eff6ff;
+  --token-color-blue-100: #dbeafe;
+  --token-color-blue-200: #bfdbfe;
+  --token-color-blue-300: #93c5fd;
+  --token-color-blue-400: #60a5fa;
+  --token-color-blue-500: #3b82f6;
+  --token-color-blue-600: #2563eb;
+  --token-color-blue-700: #1d4ed8;
+  --token-color-blue-800: #1e40af;
+  --token-color-blue-900: #1e3a8a;
+
+  /* Indigo */
+  --token-color-indigo-50: #eef2ff;
+  --token-color-indigo-100: #e0e7ff;
+  --token-color-indigo-200: #c7d2fe;
+  --token-color-indigo-300: #a5b4fc;
+  --token-color-indigo-400: #818cf8;
+  --token-color-indigo-500: #6366f1;
+  --token-color-indigo-600: #4f46e5;
+  --token-color-indigo-700: #4338ca;
+  --token-color-indigo-800: #3730a3;
+  --token-color-indigo-900: #312e81;
+
+  /* Violet */
+  --token-color-violet-50: #f5f3ff;
+  --token-color-violet-100: #ede9fe;
+  --token-color-violet-200: #ddd6fe;
+  --token-color-violet-300: #c4b5fd;
+  --token-color-violet-400: #a78bfa;
+  --token-color-violet-500: #8b5cf6;
+  --token-color-violet-600: #7c3aed;
+  --token-color-violet-700: #6d28d9;
+  --token-color-violet-800: #5b21b6;
+  --token-color-violet-900: #4c1d95;
+
+  /* Purple */
+  --token-color-purple-50: #faf5ff;
+  --token-color-purple-100: #f3e8ff;
+  --token-color-purple-200: #e9d5ff;
+  --token-color-purple-300: #d8b4fe;
+  --token-color-purple-400: #c084fc;
+  --token-color-purple-500: #a855f7;
+  --token-color-purple-600: #9333ea;
+  --token-color-purple-700: #7e22ce;
+  --token-color-purple-800: #6b21a8;
+  --token-color-purple-900: #581c87;
+
+  /* Fuchsia */
+  --token-color-fuchsia-50: #fdf4ff;
+  --token-color-fuchsia-100: #fae8ff;
+  --token-color-fuchsia-200: #f5d0fe;
+  --token-color-fuchsia-300: #f0abfc;
+  --token-color-fuchsia-400: #e879f9;
+  --token-color-fuchsia-500: #d946ef;
+  --token-color-fuchsia-600: #c026d3;
+  --token-color-fuchsia-700: #a21caf;
+  --token-color-fuchsia-800: #86198f;
+  --token-color-fuchsia-900: #701a75;
+
+  /* Pink */
+  --token-color-pink-50: #fdf2f8;
+  --token-color-pink-100: #fce7f3;
+  --token-color-pink-200: #fbcfe8;
+  --token-color-pink-300: #f9a8d4;
+  --token-color-pink-400: #f472b6;
+  --token-color-pink-500: #ec4899;
+  --token-color-pink-600: #db2777;
+  --token-color-pink-700: #be185d;
+  --token-color-pink-800: #9d174d;
+  --token-color-pink-900: #831843;
+
+  /* Rose */
+  --token-color-rose-50: #fff1f2;
+  --token-color-rose-100: #ffe4e6;
+  --token-color-rose-200: #fecdd3;
+  --token-color-rose-300: #fda4af;
+  --token-color-rose-400: #fb7185;
+  --token-color-rose-500: #f43f5e;
+  --token-color-rose-600: #e11d48;
+  --token-color-rose-700: #be123c;
+  --token-color-rose-800: #9f1239;
+  --token-color-rose-900: #881337;
+
+  /* ================================ */
+  /* ===== 2. Typography Tokens ===== */
+  /* ================================ */
+  --token-typography-font-family: "Marfa", sans-serif; /* "Inter", sans-serif; */
+  --token-typography-font-code: sourceCode-ro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+  /* Font Style */
+  --token-typography-font-normal: 400;
+  --token-typography-font-medium: 500;
+  --token-typography-font-bold: 700;
+  --token-typography-font-extra-bold: 800;
   /* Font Size */
-  --tokenFontSize48: 3rem; /* 48px */
-  --tokenFontSize40: 2.5rem; /* 40px */
-  --tokenFontSize32: 2rem; /* 32px */
-  --tokenFontSize24: 1.5rem; /* 24px */
-  --tokenFontSize22: 1.375rem; /* 22px */
-  --tokenFontSize18: 1.125rem; /* 18px */
-  --tokenFontSize16: 1rem; /* 16px */
-  --tokenFontSize14: 0.875rem; /* 14px */
-  --tokenFontSize13: 0.813rem; /* 13px */
-  --tokenFontSize12: 0.75rem; /* 12px */
-  --tokenFontSize10: 0.625rem; /* 10px */
-  --tokenFontSize09: 0.563rem; /* 9px */
-  --tokenFontSize08: 0.5rem; /* 8px */
+  --token-typography-font-size-12: 0.75rem; /* 12px */
+  --token-typography-font-size-14: 0.875rem; /* 14px */
+  --token-typography-font-size-16: 1rem; /* 16px */
+  --token-typography-font-size-18: 1.125rem; /* 18px */
+  --token-typography-font-size-24: 1.5rem; /* 24px */
+  --token-typography-font-size-32: 2rem; /* 32px */
+  --token-typography-font-size-40: 2.5rem; /* 40px */
+  --token-typography-font-size-48: 3rem; /* 48px */
+  --token-typography-font-size-56: 3.5rem; /* 56px */
   /* Line Height */
-  --tokenLineHeight58: 3.625rem; /* 58px */
-  --tokenLineHeight48: 3rem; /* 48px */
-  --tokenLineHeight38: 2.375rem; /* 38px */
-  --tokenLineHeight28: 1.75rem; /* 28px */
-  --tokenLineHeight26: 1.625rem; /* 26px */
-  --tokenLineHeight22: 1.375rem; /* 22px */
-  --tokenLineHeight20: 1.25rem; /* 20px */
-  --tokenLineHeight18: 1.125rem; /* 18px */
-  --tokenLineHeight16: 1rem; /* 16px */
-  --tokenLineHeight14: 0.875rem; /* 14px */
-  --tokenLineHeight12: 0.75rem; /* 12px */
-  --tokenLineHeight10: 0.625rem; /* 10px */
-  --tokenLineHeight09: 0.563rem; /* 9px */
+  --token-typography-line-height-16: 1rem; /* 16px */
+  --token-typography-line-height-24: 1.5rem; /* 24px */
+  --token-typography-line-height-32: 2rem; /* 32px */
+  --token-typography-line-height-40: 2.5rem; /* 40px */
+  --token-typography-line-height-48: 3rem; /* 48px */
+  --token-typography-line-height-56: 3.5rem; /* 56px */
+  --token-typography-line-height-64: 4rem; /* 64px */
 
-  /* 3 - Spacing */
-  --tokenSpacing00: 0rem;
-  --tokenSpacing02: 0.125rem;
-  --tokenSpacing04: 0.25rem;
-  --tokenSpacing08: 0.5rem;
-  --tokenSpacing12: 0.75rem;
-  --tokenSpacing16: 1rem;
-  --tokenSpacing24: 1.5rem;
-  --tokenSpacing32: 2rem;
-  --tokenSpacing40: 2.5rem;
-  --tokenSpacing48: 3rem;
-  --tokenSpacing56: 3.5rem;
-  --tokenSpacing64: 4rem;
+  /* ================================= */
+  /* ===== 3. Iconography Tokens ===== */
+  /* ================================= */
 
-  /* 4 - Grids */
+  /* ============================= */
+  /* ===== 4. Spacing Tokens ===== */
+  /* ============================= */
+  --token-spacing-0: 0;
+  --token-spacing-4: 0.25rem; /* 4px */
+  --token-spacing-8: 0.5rem; /* 8px */
+  --token-spacing-12: 0.75rem; /* 12px */
+  --token-spacing-16: 1rem; /* 16px */
+  --token-spacing-24: 1.5rem; /* 24px */
+  --token-spacing-32: 2rem; /* 32px */
+  --token-spacing-40: 2.5rem; /* 40px */
+  --token-spacing-48: 3rem; /* 48px */
+  --token-spacing-56: 3.5rem; /* 56px */
+  --token-spacing-64: 4rem; /* 64px */
+  --token-spacing-72: 4.5rem; /* 72px */
+  --token-spacing-80: 5rem; /* 80px */
 
-  /* 5 - Shadows */
-  --tokenShadowsCard: 0 0.25rem 0.75rem rgba(0, 0, 0, var(--tokenOpacity08));
-  --tokenShadowsBottomTab: 0 -0.25rem 0.75rem rgba(0, 0, 0, var(--tokenOpacity08));
-  --tokenShadowsButtonLarge: 0 0.375rem 0.875rem
-    rgba(238, 0, 51, var(--tokenOpacity25));
-  --tokenShadowsButtonMedium: 0 0.25rem 0.75rem
-    rgba(238, 0, 51, var(--tokenOpacity25));
-  --tokenShadowsButtonSmall: 0 0.125rem 0.625rem
-    rgba(238, 0, 51, var(--tokenOpacity25));
+  /* =========================== */
+  /* ===== 5. Grids Tokens ===== */
+  /* =========================== */
 
-  /* 6 - Opacity */
-  --tokenOpacity08: 0.08;
-  --tokenOpacity25: 0.25;
-  --tokenOpacity50: 0.5;
-  --tokenOpacity60: 0.6;
-  --tokenOpacity80: 0.8;
-  --tokenOpacity90: 0.9;
-  --tokenOpacity100: 1;
+  /* ============================= */
+  /* ===== 6. Shadows Tokens ===== */
+  /* ============================= */
+  --token-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --token-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --token-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --token-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --token-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --token-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --token-shadow-inner-black: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --token-shadow-innder-white: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  --token-shadow-none: none;
 
-  /* 7 - Border Radius */
-  --tokenBorderRadius02: 0.125rem;
-  --tokenBorderRadius04: 0.25rem;
-  --tokenBorderRadius06: 0.375rem;
-  --tokenBorderRadius08: 0.5rem;
-  --tokenBorderRadius10: 0.625rem;
-  --tokenBorderRadius12: 0.75rem;
-  --tokenBorderRadius14: 0.875rem;
-  --tokenBorderRadius16: 1rem;
-  --tokenBorderRadius18: 1.125rem;
-  --tokenBorderRadius20: 1.25rem;
-  --tokenBorderRadius22: 1.375rem;
-  --tokenBorderRadius24: 1.5rem;
+  /* ============================= */
+  /* ===== 7. Opacity Tokens ===== */
+  /* ============================= */
+  --token-opacity-0: 0;
+  --token-opacity-5: 0.05;
+  --token-opacity-10: 0.1;
+  --token-opacity-20: 0.2;
+  --token-opacity-25: 0.25;
+  --token-opacity-30: 0.3;
+  --token-opacity-40: 0.4;
+  --token-opacity-50: 0.5;
+  --token-opacity-60: 0.6;
+  --token-opacity-70: 0.7;
+  --token-opacity-75: 0.75;
+  --token-opacity-80: 0.8;
+  --token-opacity-90: 0.9;
+  --token-opacity-95: 0.95;
+  --token-opacity-100: 1;
 
-  /* 8 - Borders */
-  --tokenBorderViettelPayRed100: var(--tokenViettelPayRed80);
-  --tokenBorderDark10: var(--tokenDark10);
-  --tokenBorderDark20: var(--tokenDark20);
-  --tokenBorderDark40: var(--tokenDark40);
-  --tokenBorderWhite: var(--tokenWhite);
+  /* =================================== */
+  /* ===== 8. Border Radius Tokens ===== */
+  /* =================================== */
+  --token-border-radius-0: 0; /* 0px */
+  --token-border-radius-2: 0.125rem; /* 2px */
+  --token-border-radius-4: 0.25rem; /* 4px */
+  --token-border-radius-8: 0.5rem; /* 8px */
+  --token-border-radius-16: 1rem; /* 16px */
+  --token-border-radius-24: 1.5rem; /* 24px */
 
-  /* 9 - Links */
+  /* ============================= */
+  /* ===== 9. Borders Tokens ===== */
+  /* ============================= */
+  --token-border-width-0: 0;
+  --token-border-width-1: 0.063rem;
+  --token-border-style-solid: solid;
+  --token-border-style-dotted: dotted;
+  --token-border-style-dashed: dashed;
 
-  /* 10 - Timing */
-  --tokenTimingDelay200: 200ms;
-  --tokenTimingDelay300: 300ms;
-  --tokenTimingFunctionEaseInOut: ease-in-out;
-  --tokenTimingDuration1000: 1000ms;
-  --tokenTimingDuration2000: 2000ms;
-  --tokenTimingDuration3000: 3000ms;
-  --tokenTimingNameSlideInUp: slideInUp;
-  --tokenTimingNameSlideInDown: slideInDown;
-  --tokenTimingNameSlideOutDown: slideOutDown;
-  --tokenTimingNameZoomIn: zoomIn;
-  --tokenTimingNameFadeOut: fadeOut;
-  --tokenTimingNameFloatUpAndDown: floatUpAndDown;
-  --tokenTimingIterationCount01: 1;
-  --tokenTimingIterationCount02: 2;
-  --tokenTimingIterationCount03: 3;
-  --tokenTimingIterationCountInfinite: infinite;
+  /* ============================ */
+  /* ===== 10. Links Tokens ===== */
+  /* ============================ */
+  --token-link-primary: var(--token-color-cool-gray-900);
 
-  /* 11 - Sizing */
-  --tokenSizing01: 0.063rem; /* 1px; */
-  --tokenSizing02: 0.125rem; /* 2px; */
-  --tokenSizing04: 0.25rem; /* 4px; */
-  --tokenSizing08: 0.5rem; /* 8px; */
-  --tokenSizing16: 1rem; /* 16px; */
-  --tokenSizing24: 1.5rem; /* 24px; */
-  --tokenSizing32: 2rem; /* 32px; */
-  --tokenSizing40: 2.5rem; /* 40px; */
-  --tokenSizing48: 3rem; /* 48px; */
-  --tokenSizing56: 3.5rem; /* 56px; */
-  --tokenSizing64: 4rem; /* 64px; */
-  --tokenSizing72: 4.5rem; /* 72px; */
-  --tokenSizing80: 5rem; /* 80px; */
-  --tokenSizing88: 5.5rem; /* 88px; */
-  --tokenSizing96: 6rem; /* 96px; */
-  --tokenSizing104: 6.5rem; /* 104px; */
-  --tokenSizing112: 7rem; /* 112px; */
-  --tokenSizing120: 7.5rem; /* 120px; */
-  --tokenSizing128: 8rem; /* 128px; */
-  --tokenSizing136: 8.5rem; /* 136px; */
-  --tokenSizing144: 9rem; /* 144px; */
-  --tokenSizing152: 9.5rem; /* 152px; */
-  --tokenSizing160: 10rem; /* 160px; */
-  --tokenSizing168: 10.5rem; /* 168px; */
-  --tokenSizing176: 11rem; /* 176px; */
-  --tokenSizing184: 11.5rem; /* 184px; */
-  --tokenSizing192: 12rem; /* 192px; */
-  --tokenSizing200: 12.5rem; /* 200px; */
+  /* ============================= */
+  /* ===== 11. Timing Tokens ===== */
+  /* ============================= */
+  --token-timing: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
+  /* ============================= */
+  /* ===== 12. Sizing Tokens ===== */
+  /* ============================= */
+  --token-sizing-0-percent: 0%; /* 0% */
+  --token-sizing-20-percent: 20%; /* 20% */
+  --token-sizing-40-percent: 40%; /* 40% */
+  --token-sizing-60-percent: 60%; /* 60% */
+  --token-sizing-80-percent: 80%; /* 80% */
+  --token-sizing-100-percent: 100%; /* 100% */
+  --token-sizing-0: 0; /* 0px */
+  --token-sizing-2: 0.125rem; /* 2px */
+  --token-sizing-4: 0.25rem; /* 4px */
+  --token-sizing-8: 0.5rem; /* 8px */
+  --token-sizing-12: 0.75rem; /* 12px */
+  --token-sizing-16: 1rem; /* 16px */
+  --token-sizing-24: 1.5rem; /* 24px */
+  --token-sizing-32: 2rem; /* 32px */
+  --token-sizing-40: 2.5rem; /* 40px */
+  --token-sizing-48: 3rem; /* 48px */
+  --token-sizing-56: 3.5rem; /* 56px */
+  --token-sizing-64: 4rem; /* 64px */
+  --token-sizing-72: 4.5rem; /* 72px */
+  --token-sizing-80: 5rem; /* 80px */
+  --token-sizing-88: 5.5rem; /* 88px */
+  --token-sizing-96: 6rem; /* 96px */
+  --token-sizing-104: 6.5rem; /* 104px */
+  --token-sizing-112: 7rem; /* 112px */
+  --token-sizing-120: 7.5rem; /* 120px */
+  --token-sizing-128: 8rem; /* 128px */
+  --token-sizing-136: 8.5rem; /* 136px */
+  --token-sizing-144: 9rem; /* 144px */
+  --token-sizing-152: 9.5rem; /* 152px */
+  --token-sizing-160: 10rem; /* 160px */
+  --token-sizing-168: 10.5rem; /* 168px */
+  --token-sizing-176: 11rem; /* 176px */
+  --token-sizing-184: 11.5rem; /* 184px */
+  --token-sizing-192: 12rem; /* 192px */
+  --token-sizing-200: 12.5rem; /* 200px */
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a,
+input,
+button,
+.button {
+  transition: var(--token-timing);
+}
+
+html {
+  font-family: var(--token-typography-font-family);
+  font-weight: var(--token-typography-font-normal);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--token-color-cool-gray-500);
+  /* Font Smoothing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt", "kern", "liga", "clig";
+  font-variant-ligatures: common-ligatures;
+  /* Scroll Smoothing */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--token-spacing-0);
+  font-size: var(--token-typography-font-size-16);
+  line-height: var(--token-typography-line-height-32);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+b,
+strong {
+  color: var(--token-color-cool-gray-900);
+  padding: var(--token-spacing-0);
+  margin: var(--token-spacing-0);
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: var(--token-typography-font-extra-bold);
+}
+
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+b,
+strong {
+  font-weight: var(--token-typography-font-bold);
+}
+
+i {
+  font-style: italic;
+}
+
+h1,
+.h1 {
+  font-size: var(--token-typography-font-size-56);
+  line-height: var(--token-typography-line-height-64);
+}
+
+h2,
+.h2 {
+  font-size: var(--token-typography-font-size-48);
+  line-height: var(--token-typography-line-height-56);
+}
+
+h3,
+.h3 {
+  font-size: var(--token-typography-font-size-40);
+  line-height: var(--token-typography-line-height-48);
+}
+
+h4,
+.h4 {
+  font-size: var(--token-typography-font-size-32);
+  line-height: var(--token-typography-line-height-40);
+}
+
+h5,
+.h5 {
+  font-size: var(--token-typography-font-size-24);
+  line-height: var(--token-typography-line-height-32);
+}
+
+h6,
+.h6 {
+  font-size: var(--token-typography-font-size-18);
+  line-height: var(--token-typography-line-height-24);
+}
+
+.caption {
+  font-size: var(--token-typography-font-size-14);
+  line-height: var(--token-typography-line-height-24);
+}
+
+.footnote {
+  font-size: var(--token-typography-font-size-12);
+  line-height: var(--token-typography-line-height-24);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  margin: var(--token-spacing-0);
+  padding-bottom: var(--token-spacing-16);
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: var(--token-spacing-0);
+  padding: var(--token-spacing-0);
+}
+
+a {
+  text-decoration: none;
+  color: var(--token-link-primary);
+  font-weight: var(--token-typography-font-medium);
+}
+
+a:hover {
+  text-decoration: underline;
 }
