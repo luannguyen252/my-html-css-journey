@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Device if iPhone X</title>
+    <style>
+      body {
+        background-color: var(--tokenDark05);
+        height: 300rem;
+      }
+
+      /* Check devide is iPhone XR or device width is 414 and height is 896 */
+      @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+        body {
+          background-color: orange;
+        }
+
+        .button-fixed {
+          padding-bottom: var(--tokenSpacing48);
+        }
+      }
+
+      /* Check devide is iPhone X or device width is 375 and height is 812 */
+      @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+        body {
+          background-color: red;
+        }
+
+        .button-fixed {
+          padding-bottom: var(--tokenSpacing48);
+        }
+      }
+
+      /* Check devide is iPhone 8 or device width is 375 and height is 667 */
+      @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+        body {
+          background-color: green;
+        }
+
+        .button-fixed {
+          padding-bottom: var(--tokenSpacing48);
+        }
+      }
+
+      /* Check devide is iPhone 8 Plus or device width is 375 and height is 667 */
+      @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+        body {
+          background-color: blue;
+        }
+
+        .button-fixed {
+          padding-bottom: var(--tokenSpacing48);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-fixed">
+      <button type="button" class="button">Click Me</button>
+    </div>
+  </body>
+</html>
